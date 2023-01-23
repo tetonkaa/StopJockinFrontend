@@ -1,0 +1,29 @@
+.snoballText{
+    color:goldenrod;
+    text-align: center;
+}
+
+.snoballContainer{
+    height: 100vh;
+    width:100%;
+    border: red dotted;
+}
+
+.snoballContainer .carousel img{
+    height: 55vh;
+    
+}
+
+.snoballContainer .carousel{
+    filter: opacity(1) ;
+    left: 36%;
+    bottom: 27%;
+    
+
+}
+
+.snoBallTitle{
+    text-align: center;
+    color: goldenrod;
+    padding-top: 1vh;
+}

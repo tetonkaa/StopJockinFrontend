@@ -1,0 +1,75 @@
+.navContainer{
+    height: 7vw;
+    width: 100%;
+    background-color: rgb(20, 20, 20,);
+    margin:auto;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15vw; 
+    
+}
+
+.logoText{
+    font-family: 'Moon Dance', cursive;
+    font-size: 3vw;
+    margin-left: 3.5vw;
+    margin-top: 2vw;
+    
+}
+
+
+.navLinks{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3vw;
+    gap: 15vw;
+    color: goldenrod;
+}
+
+
+a:link, a:visited {
+    text-decoration: none;
+    font-family: 'Mandali', sans-serif;
+    color: goldenrod;
+    font-size: 1vw;
+    transition: transform .4s;
+  }
+
+  a:hover{
+    color: rgb(255, 255, 255) !important;
+    transition: .7s;
+    transform: scale(1.05);
+  }
+  a:visited {
+    text-decoration: none;
+  }
+
+  .navIcons{
+    height: 2vw;
+    margin-left: .5vw;
+    
+}
+
+
+.navIcons.clipper:hover{
+    filter: invert(56%) sepia(81%) saturate(432%) hue-rotate(5deg) brightness(101%) contrast(91%)
+}
+
+.iceCream{
+    animation-name: icecreamAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes icecreamAnimation {
+    0%   {filter: grayscale(0%)}
+    50% {filter: grayscale(100)}
+    100%{filter: grayscale(0%)}
+}
+
+.logoText{
+    animation: bounce; 
+  animation-duration: 2s;
+  animation-delay: 10s;
+}

@@ -1,0 +1,62 @@
+.homeText{
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Mandali', sans-serif;
+    z-index: 4;
+    width:100%;
+
+    bottom: 105vh;
+    position: relative;
+    font-size: 4vh;
+}
+
+.homeContainer{
+    
+    
+    height: 125vh;
+    width:100%;
+    z-index:1;
+    animation-name: pageLoadInFader;
+    animation-duration: 1.5s;
+    animation-play-state: running;
+    
+} 
+
+.homeContainer .carousel {
+    margin-top: 7vw;
+    bottom: 5vw;
+    filter: opacity(.4);
+    box-shadow: 100 0 8px 8px rgb(230, 6, 6) inset;
+  }
+
+.carousel {
+    margin-top:15vw;
+    bottom: 5vw;
+    filter: opacity(.4);
+    box-shadow: 100 0 8px 8px rgb(230, 6, 6) inset;
+  }
+
+.carousel img{
+
+    height: 55vw;
+}
+
+
+
+.carousel-indicators li { visibility: hidden; }
+.kar1{
+    top: 1;
+    
+    z-index: 3;
+}
+
+.largeLogo{
+font-family: 'Moon Dance', cursive;
+font-size: 15vw;
+color: goldenrod;
+
+}
+
+
+
+  
