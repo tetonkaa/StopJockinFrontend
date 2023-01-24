@@ -19,7 +19,7 @@ export default function Login ({setIsLoggedIn , isLoggedIn}) {
 
     async function submitHandler(event) {
         event.preventDefault()
-        const { data } = await axios.post('https://jockloc.herokuapp.com/user/login', formState)
+        const { data } = await axios.post('https://jockloc.herokuapp.com/api/user/login', formState)
         localStorage.token = data.token
         setIsLoggedIn(true)
     }
