@@ -43,7 +43,7 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
                     'Authorization': localStorage.getItem('token')
                 }
             };
-            await axios.delete('user', config)
+            await axios.delete('https://jockloc.herokuapp.com/user', config)
             
           
           localStorage.clear()
@@ -59,7 +59,7 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
             }
         }
             const {_id} = formState;
-            const updatedData = await axios.put(`user/${_id}`, formState, config)
+            const updatedData = await axios.put(`https://jockloc.herokuapp.com/user/${_id}`, formState, config)
             return updatedData.data
         };
 
@@ -70,7 +70,7 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
                 
             }
     }
-        const { data } = await axios.get('user', config)
+        const { data } = await axios.get('https://jockloc.herokuapp.com/user', config)
         setUsername(data.username)
         return data
         

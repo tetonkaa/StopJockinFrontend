@@ -22,7 +22,7 @@ export default function Account(props) {
                 'Authorization': localStorage.getItem('token')
             }
         };
-        await axios.delete('user', config)
+        await axios.delete('https://jockloc.herokuapp.com/user', config)
         
       
       localStorage.clear()

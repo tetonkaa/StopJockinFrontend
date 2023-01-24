@@ -11,7 +11,7 @@ export default function Products() {
     const [productList, setProductList] = useState()
     
     async function getProductInfo() {
-        const { data } = await axios.get('https://stopjockinbackend.herokuapp.com/api/Posts')
+        const { data } = await axios.get('https://jockloc.herokuapp.com/api/Posts')
         return data
         
         
