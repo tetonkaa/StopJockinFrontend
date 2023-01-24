@@ -78,7 +78,7 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
     // Set Comments
     
     async function getCommentInfo() {
-        const { data } = await axios.get('comment')
+        const { data } = await axios.get('https://jockloc.herokuapp.com/comment')
         return data   
     }
     async function createComment() {
