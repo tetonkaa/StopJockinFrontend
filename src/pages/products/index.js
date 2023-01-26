@@ -39,7 +39,7 @@ useEffect(() => {
             
             <div className="productsContainer" >
                 <h1 className="productsTitle">Stop Jockin Products</h1>
-                    {console.log({products}.products.docs)}
+                    
                     {productList.map((product, i) => {
                         return (<div >
 

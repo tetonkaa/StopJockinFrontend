@@ -83,7 +83,7 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
     }
     async function createComment() {
 
-        const { data } = await axios.post('comment', formState)
+        const { data } = await axios.post('https://jockloc.herokuapp.com/comment', formState)
         return data
     }
     useEffect(() => {
@@ -97,7 +97,7 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
     
     const [showName, setShowName] = useState(user.username)
 
-    console.log(username)
+
     
     // update the input value as a user types
     const handleChange = (event) => {
@@ -120,7 +120,7 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
         }
     }, [isLoggedIn])
 
-    console.log(showName)
+
  
     return (
         <div className="CommentComponent">
