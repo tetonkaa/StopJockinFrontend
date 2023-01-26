@@ -16,7 +16,8 @@
     animation-play-state: running;
     border: solid 1vh;
     border-image: linear-gradient(45deg, goldenrod, rgb(194, 194, 194)) 4;
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
+    margin: 1em;
     
 }
 
@@ -29,6 +30,16 @@
     margin: auto;
     margin-bottom: 2vh;
 }
+
+@media screen and (max-width: 615px) {
+    .productPhoto{
+        width: 100%;
+        position: relative;
+        display: block;
+        margin: auto;
+        margin-bottom: 2vh;
+    }
+  }
 
 .productText{
     color:goldenrod;

@@ -1,0 +1,44 @@
+
+.lot7Text{
+    color:goldenrod;
+    text-align: center;
+    font-family: 'Mandali', sans-serif;
+    font-size: 100%;
+    border: solid;
+    margin: 1em;
+}
+
+.lot7Container{
+    height: 100vh;
+    width:100%;
+    animation-name: pageLoadInFader;
+    animation-duration: 1.5s;
+    animation-play-state: running;
+}
+
+
+
+
+/* .construction {
+    
+    margin-top: 1em;
+} */
+
+
+.construction{
+    
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-bottom: 2vh;
+}
+
+@media screen and (max-width: 615px) {
+    .construction{
+        width: 100%;
+        position: relative;
+        display: block;
+        margin: auto;
+        margin-bottom: 2vh;
+    }
+  }

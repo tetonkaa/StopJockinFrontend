@@ -38,21 +38,27 @@ useEffect(() => {
         return (
             
             <div className="productsContainer" >
-            <h1 className="productsTitle">Stop Jockin Products</h1>
-            {console.log({products}.products.docs)}
-            {productList.map((product, i) => {
-                return (<div >
-            <div className="eachProduct">
-            <img className="productPhoto" src={product.productImageLink}></img>
-            <p className="productText">{product.productName}</p>
-            <p className="productText">{product.ProductDescription}</p>
-            <p className="productText">{product.price}</p>
+                <h1 className="productsTitle">Stop Jockin Products</h1>
+                    {console.log({products}.products.docs)}
+                    {productList.map((product, i) => {
+                        return (<div >
+
+
+                <div className="eachProduct">
+                    <img className="productPhoto" src={product.productImageLink}></img>
+                    <p className="productText">{product.productName}</p>
+                    <p className="productText">{product.ProductDescription}</p>
+                    <p className="productText">{product.price}</p>
+                </div>
+
+
+
             </div>
-            </div>
-            
             )
         })}
-        </div>
+
+
+            </div>
         
         )
     }

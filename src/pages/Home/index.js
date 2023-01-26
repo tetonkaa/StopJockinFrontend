@@ -33,28 +33,33 @@ const data = [
     
     return (
       <div className="homeContainer">
-            <Carousel fade controls={false} indicators={false}>
-             {data.map((slide, i) => {
+
+        <div className="homeText">       
+          {/* <p className="homeText"> */}
+
+          <h1 className="largeLogo animate__animated animate__bounce animate__delay-2s">Stop Jockin</h1>
+
+          <p className="subtext">Fine Cuts, Classic New Orleans style snoBalls, and other Stop Jockin products and services</p>
+        </div>
+
+
+        <Carousel fade controls={false} indicators={false}>
+            {data.map((slide, i) => {
               return (
                 <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={slide.image}
-                alt="slider image"
-                />
-              
-            </Carousel.Item>
-              )
-            })}
-            
-          </Carousel>
-                <div>       
-            <p className="homeText"> 
-            <h1 className="largeLogo animate__animated animate__bounce animate__delay-2s">Stop Jockin</h1> 
-            Fine Cuts,<br/>
-            Classic New Orleans style snoBalls, <br/> and other Stop Jockin products and services </p>
-            </div>
-          </div>
+                  <img
+                    className="d-block w-100"
+                    src={slide.image}
+                    alt="slider image"
+                  />
+                </Carousel.Item>
+                )
+              })
+            }
+        </Carousel>
+
+
+      </div>
         );
       }
  

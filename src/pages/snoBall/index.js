@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import './main.css'
+import './snoball.css'
 import Carousel from 'react-bootstrap/Carousel'
 import { snoballPics } from "../../assets/snoBallphotos/snoballPics";
 
@@ -33,9 +33,12 @@ export default function SnoBall() {
 
     return (
       <div className="lot7Container">
-      <p className="lot7Text">
-          PAGE UNDER CONSTRUCTION
-      <img className="construction"src="https://i.imgur.com/rG4LHzO.gif"/></p>
+
+        <div className="lot7Text">
+            <p>PAGE UNDER CONSTRUCTION</p>
+        <img className="construction"src="https://i.imgur.com/rG4LHzO.gif"/>
+        </div>
+        
       </div>
         
         // <div className="snoballContainer">
