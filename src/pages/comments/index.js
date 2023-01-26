@@ -123,7 +123,7 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
     console.log(showName)
  
     return (
-        <div>
+        <div className="CommentComponent">
         {formShow ? 
         <form className="editName" onSubmit={handleSubmit}>
         <input
@@ -173,7 +173,7 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
                 return (<div key={i}>
             <div className="commentList">
             <h1 >{comment.title}</h1>
-            <p className="productText">{comment.description}</p>
+            <p >{comment.description}</p>
             </div>
             </div>
             
