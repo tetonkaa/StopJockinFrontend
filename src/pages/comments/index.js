@@ -43,7 +43,7 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
                     'Authorization': localStorage.getItem('token')
                 }
             };
-            await axios.delete('https://jockloc.herokuapp.com/user', config)
+            await axios.delete('https://jockloc.herokuapp.com/user/', config)
             
           
           localStorage.clear()
@@ -70,7 +70,7 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
                 
             }
     }
-        const { data } = await axios.get('https://jockloc.herokuapp.com/user', config)
+        const { data } = await axios.get('https://jockloc.herokuapp.com/user/', config)
         setUsername(data.username)
         return data
         
@@ -81,11 +81,37 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
         const { data } = await axios.get('https://jockloc.herokuapp.com/comment')
         return data   
     }
-    async function createComment() {
 
-        const { data } = await axios.post('https://jockloc.herokuapp.com/comment', formState)
+
+    // async function createComment() {
+
+    //     const { data } = await axios.post('https://jockloc.herokuapp.com/comment', formState)
+    //     return data
+    // }
+
+    //create user Comments
+
+    async function createComment(formState) {
+        const config = {
+            headers: {
+                "Authorization": localStorage.getItem("token")
+            }
+        }
+        const { data } = await axios.post("https://jockloc.herokuapp.com/comment", formState, config)
         return data
-    }
+    };
+    // async function getCommentInfo() {
+    //     const config = {
+    //         headers: {
+    //             "Authorization": localStorage.getItem("token")
+    //         }
+    //     }
+    //     const { data } = await axios.get('https://jockloc.herokuapp.com/comment/show', config)
+    //     return data
+    // };
+
+
+
     useEffect(() => {
         getCommentInfo().then(data => setComments(data))
         
