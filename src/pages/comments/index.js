@@ -83,23 +83,23 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
     }
 
 
-    // async function createComment() {
+    async function createComment() {
 
-    //     const { data } = await axios.post('https://jockloc.herokuapp.com/comment', formState)
-    //     return data
-    // }
+        const { data } = await axios.post('https://jockloc.herokuapp.com/comment', formState)
+        return data
+    }
 
     //create user Comments
 
-    async function createComment(formState) {
-        const config = {
-            headers: {
-                "Authorization": localStorage.getItem("token")
-            }
-        }
-        const { data } = await axios.post("https://jockloc.herokuapp.com/comment", formState, config)
-        return data
-    };
+    // async function createComment(formState) {
+    //     const config = {
+    //         headers: {
+    //             "Authorization": localStorage.getItem("token")
+    //         }
+    //     }
+    //     const { data } = await axios.post("https://jockloc.herokuapp.com/comment", formState, config)
+    //     return data
+    // };
     // async function getCommentInfo() {
     //     const config = {
     //         headers: {
