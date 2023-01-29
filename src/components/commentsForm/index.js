@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import './main.css'
 import axios from 'axios'
 
 const Comment = ({setCommentKey}) => {
