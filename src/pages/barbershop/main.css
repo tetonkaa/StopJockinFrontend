@@ -26,8 +26,6 @@
     margin:auto;
     padding-right: 1.5vh;
     padding-top: 1.5vh;
-    
-    
 }
 
 .menu ul{
@@ -71,7 +69,7 @@ aside{
 }
 
 .barberText .carousel{
-    bottom: 15vw;
+    bottom: 15vh;
     filter: opacity(1) !important;
     
 }
