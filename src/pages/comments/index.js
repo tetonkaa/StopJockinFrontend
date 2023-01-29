@@ -14,6 +14,11 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
     const [username, setUsername] = useState()
     const [formShow, setFormShow] = useState(false)
     const [user, setUser] = useState({})
+    const [formState2, setFormState2] = useState({
+        title: '',
+        description: '',
+        
+        })
 
 
 
@@ -21,11 +26,6 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
         setShowName(user.username)
     }, [user])
 
-    const [formState, setFormState] = useState({
-        title: '',
-        description: '',
-        
-        })
     
     
         function handleChange2(event) {
@@ -77,38 +77,38 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
     }   
     // Set Comments
     
-    async function getCommentInfo() {
-        const { data } = await axios.get('https://jockloc.herokuapp.com/comment')
-        return data   
-    }
-
-
-    async function createComment() {
-
-        const { data } = await axios.post('https://jockloc.herokuapp.com/comment', formState)
-        return data
-    }
-
-    //create user Comments
-
-    // async function createComment(formState) {
-    //     const config = {
-    //         headers: {
-    //             "Authorization": localStorage.getItem("token")
-    //         }
-    //     }
-    //     const { data } = await axios.post("https://jockloc.herokuapp.com/comment", formState, config)
-    //     return data
-    // };
     // async function getCommentInfo() {
-    //     const config = {
-    //         headers: {
-    //             "Authorization": localStorage.getItem("token")
-    //         }
-    //     }
-    //     const { data } = await axios.get('https://jockloc.herokuapp.com/comment/show', config)
+    //     const { data } = await axios.get('https://jockloc.herokuapp.com/comment')
+    //     return data   
+    // }
+
+
+    // async function createComment() {
+
+    //     const { data } = await axios.post('https://jockloc.herokuapp.com/comment', formState)
     //     return data
-    // };
+    // }
+
+    //create /get user Comments (auth)
+
+    async function createComment(formState2) {
+        const config = {
+            headers: {
+                "Authorization": localStorage.getItem("token")
+            }
+        }
+        const { data } = await axios.post("https://jockloc.herokuapp.com/comment", formState2, config)
+        return data
+    };
+    async function getCommentInfo() {
+        const config = {
+            headers: {
+                "Authorization": localStorage.getItem("token")
+            }
+        }
+        const { data } = await axios.get('https://jockloc.herokuapp.com/comment/show', config)
+        return data
+    };
 
 
 
@@ -127,7 +127,7 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
     
     // update the input value as a user types
     const handleChange = (event) => {
-        setFormState({ ...formState, [event.target.name]: event.target.value })
+        setFormState2({ ...formState2, [event.target.name]: event.target.value })
         setFetch(false)
     }
     
