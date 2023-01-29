@@ -47,3 +47,25 @@
 .commentList{
     border: rgb(29, 29, 29) solid;
 }
+
+
+.comment{
+    color: white;
+    background-color: rgb(17, 17 ,17 , 1);
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border-collapse: separate;
+    border-radius: 10%;
+    
+}
+
+.content-under{
+    display: flex;
+    margin: auto;
+    margin-top: 8em;
+    width: 90%;
+    flex-direction: column;
+    background-color: #333333;
+    border-radius: 12px;
+}

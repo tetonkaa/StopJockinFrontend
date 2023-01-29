@@ -53,7 +53,7 @@ function App() {
         <Route path="/SnoBalls" element={<SnoBall/>}/>      
         <Route path="/signup" element={<SignUp setIsLoggedIn={setIsLoggedIn} isLoggedIn={isLoggedIn}/>}/>
         <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} isLoggedIn={isLoggedIn} />}/>
-        <Route path="/comments" element={<Comments setIsLoggedIn={setIsLoggedIn} isLoggedIn={isLoggedIn} />}/>
+        <Route path="/comments" element={<Comments setIsLoggedIn={setIsLoggedIn} isLoggedIn={isLoggedIn} user={user} />}/>
         {/* <Route path="/:anything" element={<ErrorScreen />}/> */}
       </Routes>
       <Footer setIsLoggedIn={setIsLoggedIn} isLoggedIn={isLoggedIn} />

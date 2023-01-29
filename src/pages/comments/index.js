@@ -14,14 +14,14 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
     const [username, setUsername] = useState()
     const [formShow, setFormShow] = useState(false)
     const [user, setUser] = useState({})
-    const [formState2, setFormState2] = useState({
-        title: '',
-        description: '',
-        
-        })
-
-
-
+    const [commentKey, setCommentKey] = useState(0)
+    
+    useEffect(() => {
+        if (!isLoggedIn) {
+            navigate('/')
+        }
+    }, [isLoggedIn])
+    
     useEffect(() => {
         setShowName(user.username)
     }, [user])
@@ -77,74 +77,14 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
     }   
     // Set Comments
     
-    // async function getCommentInfo() {
-    //     const { data } = await axios.get('https://jockloc.herokuapp.com/comment')
-    //     return data   
-    // }
-
-
-    // async function createComment() {
-
-    //     const { data } = await axios.post('https://jockloc.herokuapp.com/comment', formState)
-    //     return data
-    // }
-
-    //create /get user Comments (auth)
-
-    async function createComment(formState2) {
-        const config = {
-            headers: {
-                "Authorization": localStorage.getItem("token")
-            }
-        }
-        const { data } = await axios.post("https://jockloc.herokuapp.com/comment", formState2, config)
-        return data
-    };
-    async function getCommentInfo() {
-        const config = {
-            headers: {
-                "Authorization": localStorage.getItem("token")
-            }
-        }
-        const { data } = await axios.get('https://jockloc.herokuapp.com/comment', config)
-        return data
-    };
 
 
 
-    useEffect(() => {
-        getCommentInfo().then(data => setComments(data))
-        
-    }, [comments])
-
-    useEffect(() => {
-        getUserName().then(data => setUsername(data.username))
-    }, [username])
-    
-    const [showName, setShowName] = useState(user.username)
 
 
-    
-    // update the input value as a user types
-    const handleChange = (event) => {
-        setFormState2({ ...formState2, [event.target.name]: event.target.value })
-        setFetch(false)
-    }
-    
-    async function submitHandler(event) {
-        event.preventDefault()
-        createComment().then(setFetch(true))
-        
-        
-    }
     
     const navigate = useNavigate()
     
-    useEffect(() => {
-        if (!isLoggedIn) {
-            navigate('/')
-        }
-    }, [isLoggedIn])
 
 
  
@@ -163,49 +103,12 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
         }
         <button onClick={() => {setFormShow(true)}}>Edit</button>
 
-        <div className="commentsPage">
-            <h1>Hello {username}</h1>
-            <button className="someRedBtn" onClick={()=> deleteUser()}> Delete Account</button>
-            <br/>
-            <br/>
-            <br/>
-            <div className="signUpForm">
-            <h2 >Leave a comment</h2>
-            <form onSubmit={submitHandler}>
-                <div className="input-texts">
-                    <label htmlFor='title'>Title</label>
-                    <br/>
-                    <input
-                        type='text'
-                        name='title'
-                        onChange={handleChange}
-                        value={formState2.title} />
-                </div>
-
-                <div className="input-texts">
-                    <label htmlFor='description'>Comment</label>
-                    <br/>
-                    <input
-                        
-                        type='text'
-                        name='description'
-                        onChange={handleChange}
-                        value={formState2.description} />
-                </div>
-                <button type='submit' className='signInbutton' >Submit</button>
-            </form>
-            </div>
-            {comments.map((comment, i) => {
-                return (<div key={i}>
-            <div className="commentList">
-            <h1 >{comment.title}</h1>
-            <p >{comment.description}</p>
-            </div>
-            </div>
-            
-            )
-        })}
+        <div className='content-under'>
+                
+                <br />
+                <Comment key={commentKey} setCommentKey={setCommentKey} />
         </div>
+        
         </div>
     )
 
