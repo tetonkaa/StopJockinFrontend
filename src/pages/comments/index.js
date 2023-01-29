@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom"
 import { useEffect} from 'react';
 import './main.css'
 import axios from 'axios'
-
+import Comment from '../../components/commentsForm';
 
 
 export default function Comments({isLoggedIn, setIsLoggedIn}) {
@@ -14,14 +14,9 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
     const [username, setUsername] = useState()
     const [formShow, setFormShow] = useState(false)
     const [user, setUser] = useState({})
-    const [commentKey, setCommentKey] = useState(0)
     
-    useEffect(() => {
-        if (!isLoggedIn) {
-            navigate('/')
-        }
-    }, [isLoggedIn])
-    
+
+
     useEffect(() => {
         setShowName(user.username)
     }, [user])
@@ -77,14 +72,66 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
     }   
     // Set Comments
     
+    // async function getCommentInfo() {
+    //     const { data } = await axios.get('https://jockloc.herokuapp.com/comment')
+    //     return data   
+    // }
+
+
+    // async function createComment() {
+
+    //     const { data } = await axios.post('https://jockloc.herokuapp.com/comment', formState)
+    //     return data
+    // }
+
+    //create /get user Comments (auth)
+
+    async function createComment(formState2) {
+        const config = {
+            headers: {
+                "Authorization": localStorage.getItem("token")
+            }
+        }
+        const { data } = await axios.post("https://jockloc.herokuapp.com/comment", formState2, config)
+        return data
+    };
+    async function getCommentInfo() {
+        const config = {
+            headers: {
+                "Authorization": localStorage.getItem("token")
+            }
+        }
+        const { data } = await axios.get('https://jockloc.herokuapp.com/comment', config)
+        return data
+    };
 
 
 
+ 
 
+    useEffect(() => {
+        getUserName().then(data => setUsername(data.username))
+    }, [username])
+    
+    const [showName, setShowName] = useState(user.username)
+
+
+    
+    // update the input value as a user types
+    const handleChange = (event) => {
+        setFormState2({ ...formState2, [event.target.name]: event.target.value })
+        setFetch(false)
+    }
+    
 
     
     const navigate = useNavigate()
     
+    useEffect(() => {
+        if (!isLoggedIn) {
+            navigate('/')
+        }
+    }, [isLoggedIn])
 
 
  
@@ -103,12 +150,11 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
         }
         <button onClick={() => {setFormShow(true)}}>Edit</button>
 
-        <div className='content-under'>
-                
-                <br />
-                <Comment key={commentKey} setCommentKey={setCommentKey} />
+        <div className="commentsPage">
+            <h1>Hello {username}</h1>
+            <button className="someRedBtn" onClick={()=> deleteUser()}> Delete Account</button>
+            <Comment key={commentKey} setCommentKey={setCommentKey} />
         </div>
-        
         </div>
     )
 
