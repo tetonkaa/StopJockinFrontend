@@ -73,7 +73,6 @@ const Comment = ({setCommentKey}) => {
                     <div key={i} className="comment">
                         <p className='comment-title'>{comment.title}</p>
                         <p className='comment-content'>{comment.content}</p>
-                        <p className='comment-rating'>{comment.rating}/10</p>
                     </div>
             )}
             </section>
