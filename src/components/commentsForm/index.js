@@ -72,7 +72,7 @@ const Comment = ({setCommentKey}) => {
             { comments.map((comment, i) =>
                     <div key={i} className="comment">
                         <p className='comment-title'>{comment.title}</p>
-                        <p className='comment-content'>{comment.content}</p>
+                        <p className='comment-content'>{comment.description}</p>
                     </div>
             )}
             </section>
