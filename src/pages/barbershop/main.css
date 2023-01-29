@@ -2,7 +2,7 @@
     color:goldenrod;
     text-align: center;
     font-family: 'Mandali', sans-serif;
-    position: absolute;
+    
     
     
 }
@@ -13,10 +13,9 @@
     animation-name: pageLoadInFader;
     animation-duration: 1.5s;
     animation-play-state: running;
-    display: flex;
-    
-    
+    display: flex;    
 }
+
 .menu{
     color: white;
     font-size: 2.5vh;
