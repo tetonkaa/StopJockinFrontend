@@ -36,9 +36,9 @@ const data = [
 export default function Barbershop() {
 
     return (
-        <>
+      <>
         <div className="barberContainer">
-            <div className="barberText">
+              <div className="menu">
             <Carousel fade controls={false} indicators={false}>
              {data.map((slide, i) => {
               return (
@@ -54,8 +54,7 @@ export default function Barbershop() {
             })}
             
           </Carousel>
-        </div>
-            <div className="menu">
+
                 <ul>
                     <li>Any type of Fade(Tuesday-Saturday)</li><aside>$30</aside>
                     <li>Lining/Edge Up</li><aside>$30</aside>
