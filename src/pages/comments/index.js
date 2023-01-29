@@ -179,7 +179,7 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
                         type='text'
                         name='title'
                         onChange={handleChange}
-                        value={formState.title} />
+                        value={formState2.title} />
                 </div>
 
                 <div className="input-texts">
@@ -190,7 +190,7 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
                         type='text'
                         name='description'
                         onChange={handleChange}
-                        value={formState.description} />
+                        value={formState2.description} />
                 </div>
                 <button type='submit' className='signInbutton' >Submit</button>
             </form>
