@@ -106,7 +106,7 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
                 "Authorization": localStorage.getItem("token")
             }
         }
-        const { data } = await axios.get('https://jockloc.herokuapp.com/comment/show', config)
+        const { data } = await axios.get('https://jockloc.herokuapp.com/comment', config)
         return data
     };
 
