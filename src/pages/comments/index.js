@@ -9,11 +9,11 @@ import Comment from '../../components/commentsForm';
 
 export default function Comments({isLoggedIn, setIsLoggedIn}) {
     // state declarations
-    const [comments, setComments] = useState([])
-    const [fetch, setFetch] = useState(false)
+
     const [username, setUsername] = useState()
     const [formShow, setFormShow] = useState(false)
     const [user, setUser] = useState({})
+    const [commentKey, setCommentKey] = useState(0)
     
 
 
@@ -118,10 +118,10 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
 
     
     // update the input value as a user types
-    const handleChange = (event) => {
-        setFormState2({ ...formState2, [event.target.name]: event.target.value })
-        setFetch(false)
-    }
+    // const handleChange = (event) => {
+    //     setFormState({ ...formState, [event.target.name]: event.target.value })
+    //     setFetch(false)
+    // }
     
 
     
