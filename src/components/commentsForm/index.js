@@ -5,7 +5,7 @@ const Comment = ({setCommentKey}) => {
     
     const [formState, setFormState] = useState({
         title: '',
-        dsecription: ''
+        description: ''
     })
     const [comments, setComments] = useState([])
     
@@ -58,12 +58,12 @@ const Comment = ({setCommentKey}) => {
                         value={formState.title} />
                 </div>
                 <div className="input-text">
-                    <label htmlFor="content"></label>
+                    <label htmlFor="description"></label>
                     <input
                         type='text'
-                        name='content'
+                        name='description'
                         onChange={handleChange}
-                        placeholder="Content"
+                        placeholder="description"
                         value={formState.description} />
                 </div>
                 <button type="submit" className='btn btn-secondary comment-submit'>Submit</button>
