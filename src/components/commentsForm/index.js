@@ -49,15 +49,6 @@ const Comment = ({setCommentKey}) => {
             <h1 className="commentsHeader">Comments</h1>
             <form onSubmit={submitHandler} className='content-under'>
                 <div className="input-text">
-                    <label htmlFor="rating"></label>
-                    <input
-                        type='number'
-                        name='rating'
-                        onChange={handleChange}
-                        placeholder="Rating"
-                        value={formState.rating} />
-                </div>
-                <div className="input-text">
                     <label htmlFor="title"></label>
                     <input
                         type='text'
@@ -73,7 +64,7 @@ const Comment = ({setCommentKey}) => {
                         name='content'
                         onChange={handleChange}
                         placeholder="Content"
-                        value={formState.content} />
+                        value={formState.description} />
                 </div>
                 <button type="submit" className='btn btn-secondary comment-submit'>Submit</button>
             </form>
