@@ -37,7 +37,7 @@ export default function SignUp({setIsLoggedIn, isLoggedIn}) {
         <div className="SignUp">
             <div className="signUpForm">
             <h2 >Sign Up</h2>
-            <Link to='/login'>Log In</Link>
+            <Link className="link2login" to='/login'>Log In</Link>
 
             <form onSubmit={submitHandler}>
                 <div className="input-texts">
