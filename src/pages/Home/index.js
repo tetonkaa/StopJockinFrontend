@@ -68,5 +68,3 @@ const data = [
 
 
 
-  {/* <div className="homeContainer  ">
-    </div>  */}

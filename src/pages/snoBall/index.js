@@ -41,25 +41,6 @@ export default function SnoBall() {
         
       </div>
         
-        // <div className="snoballContainer">
-        //     <h1 className="snoBallTitle">Stop Jockin SnoBalls</h1>
-        //     <Carousel fade controls={false} indicators={false}>
-        //      {data.map((slide, i) => {
-        //          return (
-        //              <Carousel.Item>
-        //       <img
-        //         className="d-block"
-        //         src={slide.image}
-        //         alt="slider image"
-        //         />
-              
-        //     </Carousel.Item>
-        //       )
-        //     })}
-            
-        //   </Carousel>
-        //     <p className="snoballText"> THIS WILL BE THE snoBall TEXT/ REMEMBER TO ADD IMAGES AND IMAGE CAROUSEL </p>
-        // </div>
         
     )
 }

@@ -70,21 +70,7 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
         return data
         
     }   
-    // Set Comments
-    
-    // async function getCommentInfo() {
-    //     const { data } = await axios.get('https://jockloc.herokuapp.com/comment')
-    //     return data   
-    // }
 
-
-    // async function createComment() {
-
-    //     const { data } = await axios.post('https://jockloc.herokuapp.com/comment', formState)
-    //     return data
-    // }
-
-    //create /get user Comments (auth)
 
     async function createComment(formState2) {
         const config = {
@@ -117,12 +103,7 @@ export default function Comments({isLoggedIn, setIsLoggedIn}) {
 
 
     
-    // update the input value as a user types
-    // const handleChange = (event) => {
-    //     setFormState({ ...formState, [event.target.name]: event.target.value })
-    //     setFetch(false)
-    // }
-    
+
 
     
     const navigate = useNavigate()
