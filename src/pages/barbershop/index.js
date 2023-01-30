@@ -7,7 +7,7 @@ import Carousel from 'react-bootstrap/Carousel'
 
 const data = [
     {
-       image: 'https://i.imgur.com/IGIEO39.jpeg', 
+       image: 'https://i.imgur.com/PeC7bGH.jpg', 
        
       },
       {
