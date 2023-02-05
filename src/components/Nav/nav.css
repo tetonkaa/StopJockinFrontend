@@ -22,7 +22,7 @@
     display: flex;
     justify-content: flex-end;
     margin-top: 3vw;
-    gap: 15vw;
+    gap: 8vw;
     color: goldenrod;
 }
 
@@ -31,7 +31,7 @@ a:link, a:visited {
     text-decoration: none;
     font-family: 'Mandali', sans-serif;
     color: goldenrod;
-    font-size: 1vw;
+    font-size: 2vw;
     transition: transform .4s;
   }
 
