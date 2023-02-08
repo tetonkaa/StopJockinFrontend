@@ -29,14 +29,9 @@ function Footer(props) {
               </div>
 
               <div className="footerContainer">
-                <Link to='/signup'>Account</Link>
-                { !props.isLoggedIn ?
-                <>
+
                 <a href="https://jockloc.herokuapp.com/admin">Employee Portal</a>
-                </>
-                :
-                <p className="LogoutText" onClick={() => logout()}>Log out</p>
-                }
+
               </div>
 
             </nav>

@@ -40,21 +40,21 @@ export default function Barbershop() {
         <div className="barberContainer">
               <div className="menu">
 
-            <Carousel fade controls={false} indicators={false}>
-             {data.map((slide, i) => {
-              return (
-                <Carousel.Item>
-              <img
-                className="d-block h-20"
-                src={slide.image}
-                alt="slider image"
-                />
-              
-            </Carousel.Item>
-              )
-            })}
-            
-          </Carousel>
+                  <Carousel fade controls={false} indicators={false}>
+                  {data.map((slide, i) => {
+                    return (
+                      <Carousel.Item>
+                    <img
+                      className="d-block h-20"
+                      src={slide.image}
+                      alt="slider image"
+                      />
+                    
+                  </Carousel.Item>
+                    )
+                  })}
+                  
+                </Carousel>
 
                 <ul>
                     <li>Any type of Fade(Tuesday-Saturday)</li><aside>$30</aside>

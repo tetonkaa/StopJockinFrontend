@@ -9,7 +9,7 @@
 
 .barberContainer{
     height: 100%;
-    
+    margin-top: 5vw;
     animation-name: pageLoadInFader;
     animation-duration: 1.5s;
     animation-play-state: running;
@@ -19,10 +19,11 @@
 .menu{
     color: white;
     font-size: 2.5vh;
-    border: solid rgb(255, 255, 255);
-    border-image: linear-gradient(45deg, goldenrod, rgb(250, 250, 250)) 1;
+    /* border: solid rgb(255, 255, 255) ; */
+    /* border-image: linear-gradient(45deg, goldenrod, rgb(250, 250, 250)) 1; */
     margin:auto;
     padding: 5vw;
+    width: 80vw;
     
 }
 
@@ -55,14 +56,14 @@ aside{
 
 .menu img{
     
-    border: solid rgb(83, 83, 83) 10px;
+    border: solid rgb(83, 83, 83) 6px;
     border-image: linear-gradient(45deg, goldenrod, rgb(250, 250, 250)) 1;
     filter: opacity(1) !important;
     border-radius: 0px;
-    height: 40vh;
-    position:relative;
+    height: 30vw;
+    
     bottom: 1vh;
-    margin-left: 4vw;
+    margin-left: 2vw;
     
     
 }
@@ -70,8 +71,9 @@ aside{
 .menu .carousel{
     
     filter: opacity(1) !important;
-   
-    margin: auto
+    margin: auto;
+    margin-left: 30%;
+    margin-top: 3vw;
 }
 
 
