@@ -9,11 +9,11 @@
     color:rgb(255, 255, 255);
     text-align: center;
     font-family: 'Mandali', sans-serif;
-    /* z-index: 4; */
+    z-index: 2;
     width:100%;
-    /* bottom: 105vh; */
-    /* position: relative; */
     font-size: 4vh;
+    border: dotted green;
+    
 }
 
 .subtext {
@@ -23,26 +23,25 @@
 }
 
 .homeContainer{
-    height: 100%;
-    z-index:1;
+    
     animation-name: pageLoadInFader;
     animation-duration: 1.5s;
     animation-play-state: running;
+    border: dotted red;
+    height: 160vh;
+    top: 20vh;
     
 } 
 
 .homeContainer .carousel {
-    margin-top: 7vw;
-    bottom: 5vw;
-    filter: opacity(.4);
-    box-shadow: 100 0 8px 8px rgb(230, 6, 6) inset;
-  }
+    
+    margin-top: 10vh;
+    filter: opacity(.4);    
+}
 
-.carousel {
-    margin-top:15vw;
-    bottom: 5vw;
+.carousel {   
     filter: opacity(.4);
-    box-shadow: 100 0 8px 8px rgb(230, 6, 6) inset;
+    
   }
 
 .carousel img{

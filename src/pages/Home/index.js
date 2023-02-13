@@ -34,15 +34,6 @@ const data = [
     return (
       <div className="homeContainer">
 
-        <div className="homeText">       
-          {/* <p className="homeText"> */}
-
-          <h1 className="largeLogo animate__animated animate__bounce animate__delay-2s">Stop Jockin</h1>
-
-          <p className="subtext">Fine Cuts, Classic New Orleans style snoBalls, and other Stop Jockin products and services</p>
-        </div>
-
-
         <Carousel fade controls={false} indicators={false}>
             {data.map((slide, i) => {
               return (
@@ -57,6 +48,15 @@ const data = [
               })
             }
         </Carousel>
+        <div className="homeText">       
+          {/* <p className="homeText"> */}
+
+          <h1 className="largeLogo animate__animated animate__bounce animate__delay-2s">Stop Jockin</h1>
+
+          <p className="subtext">Fine Cuts, Classic New Orleans style snoBalls, and other Stop Jockin products and services</p>
+        </div>
+
+
 
 
       </div>
