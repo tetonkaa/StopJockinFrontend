@@ -80,3 +80,44 @@ a:link, a:visited {
   animation-duration: 2s;
   animation-delay: 10s;
 }
+
+@media screen and (max-width: 990px) {
+  a:link, a:visited {
+    text-decoration: none;
+    font-family: 'Mandali', sans-serif;
+    color: rgb(126, 126, 126);
+    font-size: 3vw;
+    transition: transform .4s;
+    
+  }
+
+  .navContainer{
+    height: 10.5vw;
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    justify-content: flex-start;
+    gap: 1vw; 
+    position: fixed;
+    top: 0;
+    z-index: 4;
+}
+.navLinks{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2.5vw;
+  gap: 2.5vw;
+  color: rgb(180, 180, 180);
+  font-size: 1vw !important;
+  margin-left: 8vw;
+  
+}
+.logoText{
+  font-family: 'Moon Dance', cursive;
+  font-size: 3vw;
+  margin-left: 3.5vw;
+  margin-top: 3vw;
+  color:goldenrod;
+  
+}  
+}

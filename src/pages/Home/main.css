@@ -12,7 +12,9 @@
     z-index: 2;
     width:100%;
     font-size: 4vh;
-    border: dotted green;
+    
+    position: relative;
+    bottom: 40vw;
     
 }
 
@@ -27,15 +29,14 @@
     animation-name: pageLoadInFader;
     animation-duration: 1.5s;
     animation-play-state: running;
-    border: dotted red;
-    height: 160vh;
-    top: 20vh;
     
+    height: 160vh;
+
 } 
 
 .homeContainer .carousel {
     
-    margin-top: 10vh;
+    padding-top: 10vh;
     filter: opacity(.4);    
 }
 
@@ -59,7 +60,48 @@
 }
 
 
+@media screen and (max-width: 707px) {
+    .homeText{
+        color:rgb(255, 255, 255);
+        text-align: center;
+        font-family: 'Mandali', sans-serif;
+        z-index: 2;
+        width:100%;
+        font-size: 2vh;
+        
+        position: relative;
+        bottom: 41vw;
+        
+    }
+  }
 
+@media screen and (max-width: 691px) {
+    .homeText{
+        color:rgb(255, 255, 255);
+        text-align: center;
+        font-family: 'Mandali', sans-serif;
+        z-index: 2;
+        width:100%;
+        font-size: 2.3vh;
+        
+        position: relative;
+        bottom: 41vw;
+        
+    }
+  }
+
+
+  @media screen and (max-width: 428px) {
+    .homeContainer{
+    
+        animation-name: pageLoadInFader;
+        animation-duration: 1.5s;
+        animation-play-state: running;
+        
+        height: 60vh;
+    
+    } 
+  }
 
 
   
