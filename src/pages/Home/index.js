@@ -33,13 +33,12 @@ const data = [
     
     return (
       <div className="homeContainer">
-
-        <Carousel fade controls={false} indicators={false}>
+        {/* <Carousel fade controls={false} indicators={false}>
             {data.map((slide, i) => {
               return (
                 <Carousel.Item>
                   <img
-                    className="d-block w-100"
+                    className="d-block w-40"
                     src={slide.image}
                     alt="slider image"
                   />
@@ -47,13 +46,18 @@ const data = [
                 )
               })
             }
-        </Carousel>
+        </Carousel> */}
+
         <div className="homeText">       
           {/* <p className="homeText"> */}
 
-          <h1 className="largeLogo animate__animated animate__bounce animate__delay-2s">Stop Jockin</h1>
+          <h1 className="largeLogo">Stop Jockin</h1>
 
           <p className="subtext">Fine Cuts, Classic New Orleans style snoBalls, and other Stop Jockin products and services</p>
+        </div>
+        <div>
+          <button> About </button>
+          <button> About </button>
         </div>
 
 
