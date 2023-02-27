@@ -50,7 +50,7 @@ a:link, a:visited {
   a:hover{
     color: goldenrod !important;
     transition: .2s;
-    text-shadow: 5px 10px 60px goldenrod;
+    text-shadow: #FC0 2px 0 10px;
   }
   a:visited {
     text-decoration: none;

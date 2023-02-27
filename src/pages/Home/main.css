@@ -21,7 +21,16 @@
     font-family: 'Mandali', sans-serif;
     width:100%;
     font-size: 4vh;
+    z-index: 3;
+    position: absolute;
+    padding-top: 15vw;
+    animation: titleGlower 4s linear infinite alternate;
+}
+
+@keyframes titleGlower{
+    0%   {text-shadow: #FC0 2px 0 10px;}
     
+    100%{text-shadow: rgb(255, 255, 255) 2px 0 10px;}
 }
 
 
@@ -37,22 +46,34 @@
     animation-duration: 1.5s;
     animation-play-state: running;
     padding-top: 10vw;
-    height: 80vh;
+    height: 120vh;
 
 } 
 
 .homeContainer .carousel {
     
-    padding-top: 10vh;
-    filter: opacity(.4);    
+    box-shadow: -400px 0px 0px rgb(255, 45, 45) ;
+    filter: blur(8px) opacity(.5);;
 }
 
 .carousel {   
-    filter: opacity(.4);
+    z-index: 2;
+    position:relative;
     
-  }
+}
 
+.mainCaro{
+    position:relative;
+    height: 90vh;
+    
+}
 
+.PicBorder{
+    
+    z-index: 3;
+    box-shadow: inset 0px 0px 40px 40px #DBA632 !important;
+
+}
 
 
 
