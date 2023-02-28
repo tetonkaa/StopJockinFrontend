@@ -23,7 +23,7 @@
     font-size: 4vh;
     z-index: 3;
     position: absolute;
-    padding-top: 15vw;
+    padding-top: 0vw;
     animation: titleGlower 4s linear infinite alternate;
 }
 
@@ -45,9 +45,9 @@
     animation-name: pageLoadInFader;
     animation-duration: 1.5s;
     animation-play-state: running;
-    padding-top: 10vw;
-    height: 120vh;
-
+    padding-top: 5vw;
+    height: 75vh;
+    
 } 
 
 .homeContainer .carousel {
@@ -57,7 +57,7 @@
 }
 
 .carousel {   
-    z-index: 2;
+    z-index: 1;
     position:relative;
     
 }
