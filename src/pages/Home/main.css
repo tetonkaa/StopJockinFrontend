@@ -11,7 +11,9 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
-    
+    /* border: dotted pink; */
+    animation: titleGlower 2s linear infinite alternate;
+    height: 25vw
     }
     
 
@@ -24,7 +26,7 @@
     z-index: 3;
     position: absolute;
     padding-top: 0vw;
-    animation: titleGlower 4s linear infinite alternate;
+    
 }
 
 @keyframes titleGlower{

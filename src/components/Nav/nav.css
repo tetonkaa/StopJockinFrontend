@@ -1,10 +1,10 @@
 .navContainer{
-    height: 5.5vw;
+    height: 4.5vw;
     width: 100%;
     background-color: rgb(22, 22, 22);
     display: flex;
     justify-content: flex-start;
-    gap: 15vw; 
+    gap: 10vw; 
     position: fixed;
     top: 0;
     z-index: 4;
@@ -32,10 +32,10 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 2.5vw;
+    gap: 8vw;
     color: rgb(180, 180, 180);
     font-size: 1vw !important;
-    margin-left: 34vw;  
+    margin-left: 14vw;  
 }
 
 
