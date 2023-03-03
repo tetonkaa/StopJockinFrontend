@@ -8,6 +8,7 @@
     position: fixed;
     top: 0;
     z-index: 4;
+    
 }
 
 .logoText{
@@ -63,7 +64,7 @@ a:link, a:visited {
 }
 
 
-.navIcons.clipper:hover{
+.navIcons:hover{
     filter: invert(56%) sepia(81%) saturate(432%) hue-rotate(5deg) brightness(101%) contrast(91%)
 }
 
@@ -97,23 +98,23 @@ a:link, a:visited {
   }
 
   .navContainer{
-    height: 10.5vw;
+    height: 7.5vw;
     width: 100%;
     background-color: rgb(22, 22, 22);
     display: flex;
     justify-content: flex-start;
     gap: 1vw; 
     position: fixed;
-    top: 0;
+    
     z-index: 4;
 }
 .navLinks{
   display: flex;
   justify-content: flex-end;
-  margin-top: 2.5vw;
-  gap: 2.5vw;
+  
+  gap: 1.5vw;
   color: rgb(180, 180, 180);
-  font-size: 1vw !important;
+  font-size: 1vw;
   margin-left: 8vw;
   
 }
@@ -121,8 +122,21 @@ a:link, a:visited {
   font-family: 'Moon Dance', cursive;
   font-size: 3vw;
   margin-left: 3.5vw;
-  margin-top: 3vw;
+  
   color:goldenrod;
   
-}  
+} 
+.navIcons{
+  display:none;
+} 
+}
+
+.bagSVG{
+  padding-bottom: .3vw !important;
+  
+}
+
+.buildingSVG{
+  padding-bottom: .2vw;
+  
 }

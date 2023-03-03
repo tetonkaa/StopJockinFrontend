@@ -89,50 +89,11 @@
 
 @media screen and (max-width: 707px) {
     .homeText{
-        color:rgb(255, 255, 255);
-        text-align: center;
-        font-family: 'Mandali', sans-serif;
-        z-index: 2;
-        width:100%;
-        font-size: 2vh;
-        
-        
-        bottom: 41vw;
-        
-    }
-  }
-
-@media screen and (max-width: 691px) {
-    .homeText{
-        color:rgb(255, 255, 255);
-        text-align: center;
-        font-family: 'Mandali', sans-serif;
-        z-index: 2;
-        width:100%;
-        font-size: 2.3vh;
-        
-        bottom: 41vw;
-        
+        padding-top: 20vw;
     }
   }
 
 
-  @media screen and (max-width: 428px) {
-    .homeContainer{
-    
-        animation-name: pageLoadInFader;
-        animation-duration: 1.5s;
-        animation-play-state: running;
-        
-        height: 60vh;
-    
-    }
-    .homeContainer .carousel {
-    
-        padding-top: 20vh;
-        filter: opacity(.4);    
-    } 
-  }
 
 
   

@@ -16,12 +16,13 @@
 }
 .footerContainer a{
     color: white;
-    padding-left: 2vw;
+    
 }
 
 .footerContainer p{
     color: white;
-    padding-left: 2vw;
+    
+    text-align:center;
 }
 
 .hours{
