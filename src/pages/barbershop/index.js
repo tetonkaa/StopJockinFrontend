@@ -4,6 +4,8 @@ import './main.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap';
 import Carousel from 'react-bootstrap/Carousel'
+import 'animate.css';
+
 
 const data = [
     {
@@ -11,7 +13,7 @@ const data = [
        
       },
       {
-        image:'https://i.imgur.com/9gW0YR6.jpeg', 
+        image:'https://i.imgur.com/pwKaKdw.jpg', 
         
       },
       {
