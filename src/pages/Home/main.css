@@ -13,7 +13,7 @@
     -moz-text-fill-color: transparent;
     /* border: dotted pink; */
     animation: titleGlower 2s linear infinite alternate;
-    height: 25vw
+    height: 20vw
     }
     
 
@@ -37,9 +37,10 @@
 
 
 .subtext {
-    margin-top: 1.5em;
-    font-size: 75%;
-    padding: 0em 2em;
+    
+    font-size: 1.5vw;
+    font-weight: bolder;
+    
 }
 
 .homeContainer{
@@ -92,6 +93,12 @@
 @media screen and (max-width: 707px) {
     .homeText{
         padding-top: 20vw;
+    }
+    .subtext {
+    
+        font-size: 4vw;
+        font-weight: bolder;
+        
     }
   }
 
