@@ -16,7 +16,7 @@ export default function Lot7() {
                 <p>PAGE UNDER CONSTRUCTION</p>
             <img className="construction" src="https://i.imgur.com/rG4LHzO.gif"/>
             </div>
-
+            
         </div>
         
     )
