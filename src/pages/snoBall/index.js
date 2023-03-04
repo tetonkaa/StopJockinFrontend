@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import './snoball.css'
-import KUTE from 'kute.js'
 import { useRef } from 'react';
+import 'animate.css';
 
 
 
@@ -12,30 +12,19 @@ import { useRef } from 'react';
 
 export default function SnoBall() {
   
-    const svg1Ref = useRef(null);
-    const svg2Ref = useRef(null);
-  
-    useEffect(() => {
-        console.log('useEffect called');
-        const svg1Path = document.querySelector("#blob1 path");
-        const svg2Path = document.querySelector("#blob2 path");
-      
-        if (svg1Path && svg2Path) {
-          KUTE.fromTo(svg1Path, { path: svg2Path }, { duration: 20000, autoStart: true }).repeat(Infinity).start();
-        }
-      }, []);
+
       
       
 
     return (
       <div className="snoballContainer">
-        
-
-        <div className="snoballText">
-            <p>PAGE UNDER CONSTRUCTION</p>
-            <svg id="visual" viewBox="0 0 1903 680" width="1903" height="680" xmlns="http://www.w3.org/2000/svg"
+            <div class="animate__animated animate__bounceIn animate__delay-1s ">
+            <p >Stop Jockin Snoballs</p>
+            </div>
+        <div className="snoballBG">
+            <svg id="visual" viewBox="0 0 1900 900" width="1900" height="900" xmlns="http://www.w3.org/1900/svg"
     version="1.1">
-    <rect x="0" y="0" width="1903" height="680" fill="#212121"></rect>
+    <rect x="0" y="0" width="1900" height="900" fill="#212121"></rect>
     <defs>
         <linearGradient id="grad1_0" x1="64.3%" y1="0%" x2="100%" y2="100%">
             <stop offset="-5.970588235294112%" stopColor="#ff5c5d" stopOpacity="1"></stop>
@@ -108,8 +97,8 @@ export default function SnoBall() {
             <stop offset="105.97058823529412%" stopColor="#4a2f2c" stopOpacity="1"></stop>
         </linearGradient>
     </defs>
-    <g transform="translate(1903, 0)">
-        <path id="blob1" ref={svg1Ref}
+    <g transform="translate(1900, 0)">
+        <path id="blob1" 
             d="M0 442C-49.5 388.7 -99.1 335.4 -118.6 286.4C-138.2 237.4 -127.7 192.6 -181.7 181.7C-235.7 170.8 -354.2 193.8 -408.4 169.1C-462.5 144.5 -452.2 72.3 -442 0L0 0Z"
             fill="#362827"></path>
         <path id="blob2"
@@ -128,7 +117,7 @@ export default function SnoBall() {
             d="M0 73.7C-8.3 64.8 -16.5 55.9 -19.8 47.7C-23 39.6 -21.3 32.1 -30.3 30.3C-39.3 28.5 -59 32.3 -68.1 28.2C-77.1 24.1 -75.4 12 -73.7 0L0 0Z"
             fill="#ff5c5d"></path>
     </g>
-    <g transform="translate(0, 680)">
+    <g transform="translate(0, 900)">
         <path id="blob7"
             d="M0 -442C67.9 -437.8 135.9 -433.7 159.2 -384.3C182.5 -335 161.2 -240.4 205.1 -205.1C248.9 -169.7 358 -193.5 408.4 -169.1C458.7 -144.8 450.4 -72.4 442 0L0 0Z"
             fill="#362827"></path>
@@ -149,48 +138,7 @@ export default function SnoBall() {
             fill="#ff5c5d"></path>
     </g>
 
-    {/* <g transform="translate(1903, 0)">
-        <path id="blob1" ref={svg2Ref}
-            d="M0 442C-56.9 435.9 -113.8 429.9 -169.1 408.4C-224.5 386.8 -278.3 349.8 -300.5 300.5C-322.7 251.2 -313.4 189.5 -331.7 137.4C-350 85.2 -396 42.6 -442 0L0 0Z"
-            fill="#362827"></path>
-        <path id="blob2"
-            d="M0 368.3C-47.4 363.3 -94.8 358.2 -141 340.3C-187.1 322.4 -231.9 291.5 -250.4 250.4C-268.9 209.3 -261.1 157.9 -276.4 114.5C-291.7 71 -330 35.5 -368.3 0L0 0Z"
-            fill="#5f3532"></path>
-        <path id="blob3"
-            d="M0 294.7C-37.9 290.6 -75.9 286.6 -112.8 272.2C-149.7 257.9 -185.5 233.2 -200.3 200.3C-215.2 167.5 -208.9 126.4 -221.1 91.6C-233.3 56.8 -264 28.4 -294.7 0L0 0Z"
-            fill="#8a413e"></path>
-        <path id="blob4"
-            d="M0 221C-28.4 218 -56.9 214.9 -84.6 204.2C-112.2 193.4 -139.2 174.9 -150.3 150.3C-161.4 125.6 -156.7 94.8 -165.8 68.7C-175 42.6 -198 21.3 -221 0L0 0Z"
-            fill="#b84c4a"></path>
-        <path id="blob5"
-            d="M0 147.3C-19 145.3 -37.9 143.3 -56.4 136.1C-74.8 128.9 -92.8 116.6 -100.2 100.2C-107.6 83.7 -104.5 63.2 -110.6 45.8C-116.7 28.4 -132 14.2 -147.3 0L0 0Z"
-            fill="#e75757"></path>
-        <path id="blob6"
-            d="M0 73.7C-9.5 72.7 -19 71.6 -28.2 68.1C-37.4 64.5 -46.4 58.3 -50.1 50.1C-53.8 41.9 -52.2 31.6 -55.3 22.9C-58.3 14.2 -66 7.1 -73.7 0L0 0Z"
-            fill="#ff5c5d"></path>
-    </g>
 
-    
-    <g transform="translate(0, 680)">
-        <path id="blob7"
-            d="M0 -442C11.3 -326.2 22.5 -210.5 85.3 -206C148.1 -201.6 262.4 -308.4 312.5 -312.5C362.6 -316.7 348.5 -218.1 359.4 -148.9C370.3 -79.7 406.1 -39.8 442 0L0 0Z"
-            fill="#362827"></path>
-        <path id="blob8"
-            d="M0 -368.3C9.4 -271.9 18.8 -175.4 71.1 -171.7C123.4 -168 218.7 -257 260.5 -260.5C302.2 -263.9 290.4 -181.7 299.5 -124.1C308.6 -66.4 338.4 -33.2 368.3 0L0 0Z"
-            fill="#5f3532"></path>
-        <path id="blob9"
-            d="M0 -294.7C7.5 -217.5 15 -140.3 56.9 -137.4C98.8 -134.4 175 -205.6 208.4 -208.4C241.8 -211.1 232.3 -145.4 239.6 -99.2C246.8 -53.1 270.8 -26.6 294.7 0L0 0Z"
-            fill="#8a413e"></path>
-        <path id="blob10"
-            d="M0 -221C5.6 -163.1 11.3 -105.2 42.7 -103C74.1 -100.8 131.2 -154.2 156.3 -156.3C181.3 -158.3 174.3 -109 179.7 -74.4C185.1 -39.8 203.1 -19.9 221 0L0 0Z"
-            fill="#b84c4a"></path>
-        <path id="blob11"
-            d="M0 -147.3C3.8 -108.7 7.5 -70.2 28.4 -68.7C49.4 -67.2 87.5 -102.8 104.2 -104.2C120.9 -105.6 116.2 -72.7 119.8 -49.6C123.4 -26.6 135.4 -13.3 147.3 0L0 0Z"
-            fill="#e75757"></path>
-        <path id="blob12"
-            d="M0 -73.7C1.9 -54.4 3.8 -35.1 14.2 -34.3C24.7 -33.6 43.7 -51.4 52.1 -52.1C60.4 -52.8 58.1 -36.3 59.9 -24.8C61.7 -13.3 67.7 -6.6 73.7 0L0 0Z"
-            fill="#ff5c5d"></path>
-    </g> */}
 </svg>
 
         </div>

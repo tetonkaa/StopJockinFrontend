@@ -1,19 +1,43 @@
-.snoballText{
-    color:goldenrod;
-    text-align: center;
-}
 
 .snoballContainer{
     height: 100vh;
     width:100%;
+    animation-name: pageLoadInFader;
+    animation-duration: 1.5s;
+    animation-play-state: running;
+    
+    
+}
+
+.snoballContainer p{
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Mandali', sans-serif;
+    width:100%;
+    font-size: 8vh;
+    z-index: 3;
+    position: absolute;
+    padding-top: 7vw;
+    font-family: 'Moon Dance', cursive;
+    animation: titleGlower2 2s linear infinite alternate;
+}
+
+@keyframes titleGlower2{
+    0%   {text-shadow: #F5EFE0 2px 0 10px;}
+
+    20%   {text-shadow: #FFC2B4 2px 0 10px;}
+
+    40%   {text-shadow: #FF5C5D 2px 0 10px;}
+
+    60%   {text-shadow: #CAE2AC 2px 0 10px;}
+    
+    80%   {text-shadow: #ACC7E2 2px 0 10px;}
    
+    100%  {text-shadow: #5271FF 2px 0 10px;}
 }
 
 
-.icecreamBg{
-    z-index:5;
-    display: block;
-}
+
 .snoballContainer .carousel img{
     height: 55vh;
     
