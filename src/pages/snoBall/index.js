@@ -47,15 +47,11 @@ function ControlledCarousel() {
           
           <div className="snoballItems">
           <ul>
-            <li>icecream</li>
-            <li>icecream</li>
-            <li>icecream</li>
-            <li>icecream</li>
-            <li>icecream</li>
-            <li>icecream</li>
-            <li>icecream</li>
-            <li>icecream</li>
-            <li>icecream</li>
+            <li>Kiddie 8 oz $1</li>
+            <li>Small 12oz $2</li>
+            <li>Medium 16oz $3</li>
+            <li>Large 20oz $4</li>
+            <li>The Stop Jockin 32oz $5</li>
           </ul>
           </div>
           <br/>
@@ -63,11 +59,11 @@ function ControlledCarousel() {
         <br/>
           <div className="foodList">
           <ul>
-            <li>icecream</li>
-            <li>icecream</li>
-            <li>icecream</li>
-            <li>icecream</li>
-            <li>icecream</li>
+            <li>Shrimp on Bun</li>
+            <li>Shrimp Nachos</li>
+            <li>Nachos & Cheese (w/chilli + .50)</li>
+            <li>Shrimp Fries</li>
+            <li>Chilli Dogs (w/cheese + .50)</li>
           </ul>
           </div>
           <br/>
@@ -75,15 +71,15 @@ function ControlledCarousel() {
         <br/>
           <div className="flavors">
           <ul>
-            <li>icecream</li>
-            <li>icecream</li>
-            <li>icecream</li>
-            <li>icecream</li>
-            <li>icecream</li>
-            <li>icecream</li>
-            <li>icecream</li>
-            <li>icecream</li>
-            <li>icecream</li>
+            <li>Strawberry</li>
+            <li>Chocolate</li>
+            <li>Watermelon</li>
+            <li>Daiquiri</li>
+            <li>King Cake</li>
+            <li>Tiger's Blood</li>
+            <li>Birthday Cake</li>
+            <li>Margarita</li>
+            <li>and many more!</li>
           </ul>
           </div>
           </div>

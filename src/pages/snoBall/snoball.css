@@ -5,6 +5,7 @@
     animation-name: pageLoadInFader;
     animation-duration: 1.5s;
     animation-play-state: running;
+    border: dotted pink;
     
     
 }
@@ -36,26 +37,44 @@
 .snoballCarousel{
     position: absolute;
     z-index: 3;
-    margin-right: 90vw;
     top: 2vw;
-    padding: 0;
     height: 40vw;
-    width: 35vw;
+    width: 60vw;
     padding-bottom: 4vw;
     
+    
 }
+
 
 .snowballMenuContainer div{
     border-bottom: rgb(255, 255, 255) ridge;
     padding-left: 5%;
     padding-bottom: 1vw;
-    padding-top: 2vw;
     display:flex;
+    flex-flow: column wrap;
     
 }
 
 .snowballMenuContainer h3{
     color: white;
+}
+
+.snowballMenuContainer{
+    
+    height: 40vw;
+    width: 35vw;
+    margin-left: 13vw;
+    margin-bottom: 10vw;
+}
+
+.snowballMenuContainer ul{
+    display:flex;
+    flex-flow: wrap;
+    justify-content:space-evenly;  
+    width: 40vw;
+    height: 30vw;
+    
+    
 }
 
 .snoballItems{
@@ -110,9 +129,8 @@
 
 .snoballContainer .carousel{
     filter: opacity(1) ;
-    left: 36%;
+    left: 23%;
     bottom: 27%;
-    
 
 }
 
