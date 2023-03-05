@@ -28,8 +28,8 @@ function ControlledCarousel() {
     };
   
     return (
-      <Carousel className="snoballCarousel" activeIndex={index} onSelect={handleSelect}>
-        <Carousel.Item interval={950000}>
+      <Carousel className="snoballCarousel" activeIndex={index} onSelect={handleSelect} indicators={false}>
+        <Carousel.Item interval={950000} >
           {/* <img
             className="d-block w-40"
             src="https://i.imgur.com/IGIEO39.jpeg"
