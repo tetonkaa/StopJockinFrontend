@@ -267,3 +267,35 @@
     
     100%{d: path("M0 -73.7C1.9 -54.4 3.8 -35.1 14.2 -34.3C24.7 -33.6 43.7 -51.4 52.1 -52.1C60.4 -52.8 58.1 -36.3 59.9 -24.8C61.7 -13.3 67.7 -6.6 73.7 0L0 0Z")}
 }
+
+
+.column {
+    float: left;
+    width: 10vw;
+    margin-left: 8vw;
+    height: 20vw;
+    background-color: #212121;
+    
+  }
+
+.column img {
+    padding-top: vw;
+    padding-bottom: 2vw;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column img{
+    height: 20vw !important;
+    padding-left: .3vw;
+  }
+
+
+.row{
+    padding-top: 2vw;
+    width: 45vw;
+}

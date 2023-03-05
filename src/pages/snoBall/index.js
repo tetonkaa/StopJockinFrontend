@@ -5,20 +5,13 @@ import 'animate.css';
 import Carousel from 'react-bootstrap/Carousel';
 import React, { useState } from 'react';
 
-const data = [
-    {
-       image: 'https://i.imgur.com/IGIEO39.jpeg', 
-       
-      },
-      {
-        image:'https://i.imgur.com/9gW0YR6.jpeg', 
-        
-      },
-      {
-        image:'https://i.imgur.com/ANiCRai.jpeg', 
-        
-      } 
-    ]
+//image imports
+import crawFries from './snoBallphotos/crawFishFries.jpg'
+import friedShrimp from './snoBallphotos/friedShrimp.jpg'
+import snowBall1 from './snoBallphotos/snowBall1.jpg'
+import snowBall2 from './snoBallphotos/snowball2.jpg'
+import snowBall3 from './snoBallphotos/snowball3.jpg'
+
 
 function ControlledCarousel() {
     const [index, setIndex] = useState(0);
@@ -86,27 +79,35 @@ function ControlledCarousel() {
 
         </Carousel.Item>
         <Carousel.Item interval={950000}>
-          <img
-            className="d-block w-40"
-            src="https://i.imgur.com/IGIEO39.jpeg"
-            alt="Second slide"
-          />
+
+          <div class="row">
+
+            <div class="column">
+              <img src={crawFries}/>
+              <img src={friedShrimp}/>
+              <img src={friedShrimp}/>
+              
+            </div>
+
+            <div class="column">
+              <img src={snowBall1}/>
+              <img src={snowBall2}/>
+              <img src={snowBall3}/>
+
+            </div>
+
+          </div>
+
   
-          <Carousel.Caption>
-            
-            
-          </Carousel.Caption>
+
         </Carousel.Item>
         <Carousel.Item interval={950000}>
           <img
-            className="d-block w-40"
             src="https://i.imgur.com/IGIEO39.jpeg"
             alt="Third slide"
           />
   
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-          </Carousel.Caption>
+
         </Carousel.Item>
       </Carousel>
     );
