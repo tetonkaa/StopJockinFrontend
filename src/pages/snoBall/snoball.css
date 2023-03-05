@@ -9,17 +9,69 @@
     
 }
 
-.snoballContainer p{
+.snoballContainer h1{
     color:rgb(255, 255, 255);
     text-align: center;
     font-family: 'Mandali', sans-serif;
     width:100%;
     font-size: 8vh;
-    z-index: 3;
-    position: absolute;
-    padding-top: 7vw;
+    padding-top: 1vw;
     font-family: 'Moon Dance', cursive;
     animation: titleGlower2 2s linear infinite alternate;
+}
+
+
+/* .snoballContainer h5{
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Mandali', sans-serif;
+    width:100%;
+    font-size: 8vh;
+    padding-top: 4vw;
+    font-family: 'Moon Dance', cursive;
+    animation: titleGlower2 2s linear infinite alternate;
+} */
+
+
+.snoballCarousel{
+    position: absolute;
+    z-index: 3;
+    margin-right: 90vw;
+    top: 2vw;
+    padding: 0;
+    height: 40vw;
+    width: 35vw;
+    padding-bottom: 4vw;
+    
+}
+
+.snowballMenuContainer div{
+    border-bottom: rgb(255, 255, 255) ridge;
+    padding-left: 5%;
+    padding-bottom: 1vw;
+    padding-top: 2vw;
+    
+}
+
+.snowballMenuContainer h3{
+    color: white;
+}
+
+.foodItems{
+    border:  salmon solid;
+    height: 5vw;
+    padding-top: .5vw;
+    display:flex;
+    flex-flow: column wrap;
+}
+
+.flavors{
+    border:  salmon solid;
+    height: 15vw;
+    padding-top: .5vw;
+    justify-items: auto;
+    display:flex;
+    flex-flow: column wrap;
 }
 
 @keyframes titleGlower2{
@@ -49,6 +101,14 @@
     bottom: 27%;
     
 
+}
+
+.snoballBG{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    z-index: 1;
 }
 
 .snoBallTitle{

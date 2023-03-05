@@ -2,8 +2,108 @@ import { useEffect } from "react";
 import './snoball.css'
 import { useRef } from 'react';
 import 'animate.css';
+import Carousel from 'react-bootstrap/Carousel';
+import React, { useState } from 'react';
 
+const data = [
+    {
+       image: 'https://i.imgur.com/IGIEO39.jpeg', 
+       
+      },
+      {
+        image:'https://i.imgur.com/9gW0YR6.jpeg', 
+        
+      },
+      {
+        image:'https://i.imgur.com/ANiCRai.jpeg', 
+        
+      } 
+    ]
 
+function ControlledCarousel() {
+    const [index, setIndex] = useState(0);
+  
+    const handleSelect = (selectedIndex, e) => {
+      setIndex(selectedIndex);
+    };
+  
+    return (
+      <Carousel className="snoballCarousel" activeIndex={index} onSelect={handleSelect}>
+        <Carousel.Item interval={900000}>
+          {/* <img
+            className="d-block w-40"
+            src="https://i.imgur.com/IGIEO39.jpeg"
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <h3>First slide label</h3>
+            
+          </Carousel.Caption> */}
+          <div className="snowballMenuContainer">
+
+          <h1 className="snowballMenu">Menu</h1>
+
+          <h3>Food Items</h3>
+          
+          <div className="foodItems">
+          <ul>
+            <li>icecream</li>
+            <li>icecream</li>
+            <li>icecream</li>
+            <li>icecream</li>
+            <li>icecream</li>
+            <li>icecream</li>
+            <li>icecream</li>
+            <li>icecream</li>
+            <li>icecream</li>
+          </ul>
+          </div>
+          <br/>
+            <h3>Flavors</h3>
+        <br/>
+          <div className="flavors">
+          <ul>
+            <li>icecream</li>
+            <li>icecream</li>
+            <li>icecream</li>
+            <li>icecream</li>
+            <li>icecream</li>
+            <li>icecream</li>
+            <li>icecream</li>
+            <li>icecream</li>
+            <li>icecream</li>
+          </ul>
+          </div>
+
+          </div>
+
+        </Carousel.Item>
+        <Carousel.Item interval={900000}>
+          <img
+            className="d-block w-40"
+            src="https://i.imgur.com/IGIEO39.jpeg"
+            alt="Second slide"
+          />
+  
+          <Carousel.Caption>
+            
+            
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item interval={900000}>
+          <img
+            className="d-block w-40"
+            src="https://i.imgur.com/IGIEO39.jpeg"
+            alt="Third slide"
+          />
+  
+          <Carousel.Caption>
+            <h3>Third slide label</h3>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+    );
+  }
 
 
 
@@ -19,9 +119,12 @@ export default function SnoBall() {
     return (
       <div className="snoballContainer">
             <div class="animate__animated animate__bounceIn animate__delay-1s ">
-            <p >Stop Jockin Snoballs</p>
+            <h5>Stop Jockin Snoballs</h5>
             </div>
+        (<ControlledCarousel />);
         <div className="snoballBG">
+
+
             <svg id="visual" viewBox="0 0 1900 900" width="1900" height="900" xmlns="http://www.w3.org/1900/svg"
     version="1.1">
     <rect x="0" y="0" width="1900" height="900" fill="#212121"></rect>
