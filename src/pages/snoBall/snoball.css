@@ -50,6 +50,7 @@
     padding-left: 5%;
     padding-bottom: 1vw;
     padding-top: 2vw;
+    display:flex;
     
 }
 
@@ -57,7 +58,7 @@
     color: white;
 }
 
-.foodItems{
+.snoballItems{
     border:  salmon solid;
     height: 5vw;
     padding-top: .5vw;
@@ -67,11 +68,23 @@
 
 .flavors{
     border:  salmon solid;
-    height: 15vw;
+    height: 10vw;
     padding-top: .5vw;
     justify-items: auto;
     display:flex;
     flex-flow: column wrap;
+}
+
+.foodList{
+    border:  salmon solid;
+    height: 8vw;
+    padding-top: .5vw;
+    justify-items: auto;
+    display:flex;
+    flex-flow: column wrap;
+    flex-wrap: wrap;
+    flex-direction: row;
+
 }
 
 @keyframes titleGlower2{

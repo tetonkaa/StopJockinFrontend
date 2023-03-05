@@ -29,7 +29,7 @@ function ControlledCarousel() {
   
     return (
       <Carousel className="snoballCarousel" activeIndex={index} onSelect={handleSelect}>
-        <Carousel.Item interval={900000}>
+        <Carousel.Item interval={950000}>
           {/* <img
             className="d-block w-40"
             src="https://i.imgur.com/IGIEO39.jpeg"
@@ -43,14 +43,26 @@ function ControlledCarousel() {
 
           <h1 className="snowballMenu">Menu</h1>
 
-          <h3>Food Items</h3>
+          <h3>Sno-Balls</h3>
           
-          <div className="foodItems">
+          <div className="snoballItems">
           <ul>
             <li>icecream</li>
             <li>icecream</li>
             <li>icecream</li>
             <li>icecream</li>
+            <li>icecream</li>
+            <li>icecream</li>
+            <li>icecream</li>
+            <li>icecream</li>
+            <li>icecream</li>
+          </ul>
+          </div>
+          <br/>
+            <h3>Food</h3>
+        <br/>
+          <div className="foodList">
+          <ul>
             <li>icecream</li>
             <li>icecream</li>
             <li>icecream</li>
@@ -74,11 +86,10 @@ function ControlledCarousel() {
             <li>icecream</li>
           </ul>
           </div>
-
           </div>
 
         </Carousel.Item>
-        <Carousel.Item interval={900000}>
+        <Carousel.Item interval={950000}>
           <img
             className="d-block w-40"
             src="https://i.imgur.com/IGIEO39.jpeg"
@@ -90,7 +101,7 @@ function ControlledCarousel() {
             
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={900000}>
+        <Carousel.Item interval={950000}>
           <img
             className="d-block w-40"
             src="https://i.imgur.com/IGIEO39.jpeg"
@@ -125,9 +136,9 @@ export default function SnoBall() {
         <div className="snoballBG">
 
 
-            <svg id="visual" viewBox="0 0 1900 900" width="1900" height="900" xmlns="http://www.w3.org/1900/svg"
+            <svg id="visual" viewBox="0 0 1950 950" width="1950" height="950" xmlns="http://www.w3.org/1950/svg"
     version="1.1">
-    <rect x="0" y="0" width="1900" height="900" fill="#212121"></rect>
+    <rect x="0" y="0" width="1950" height="950" fill="#212121"></rect>
     <defs>
         <linearGradient id="grad1_0" x1="64.3%" y1="0%" x2="100%" y2="100%">
             <stop offset="-5.970588235294112%" stopColor="#ff5c5d" stopOpacity="1"></stop>
@@ -200,7 +211,7 @@ export default function SnoBall() {
             <stop offset="105.97058823529412%" stopColor="#4a2f2c" stopOpacity="1"></stop>
         </linearGradient>
     </defs>
-    <g transform="translate(1900, 0)">
+    <g transform="translate(1950, 0)">
         <path id="blob1" 
             d="M0 442C-49.5 388.7 -99.1 335.4 -118.6 286.4C-138.2 237.4 -127.7 192.6 -181.7 181.7C-235.7 170.8 -354.2 193.8 -408.4 169.1C-462.5 144.5 -452.2 72.3 -442 0L0 0Z"
             fill="#362827"></path>
@@ -220,7 +231,7 @@ export default function SnoBall() {
             d="M0 73.7C-8.3 64.8 -16.5 55.9 -19.8 47.7C-23 39.6 -21.3 32.1 -30.3 30.3C-39.3 28.5 -59 32.3 -68.1 28.2C-77.1 24.1 -75.4 12 -73.7 0L0 0Z"
             fill="#ff5c5d"></path>
     </g>
-    <g transform="translate(0, 900)">
+    <g transform="translate(0, 950)">
         <path id="blob7"
             d="M0 -442C67.9 -437.8 135.9 -433.7 159.2 -384.3C182.5 -335 161.2 -240.4 205.1 -205.1C248.9 -169.7 358 -193.5 408.4 -169.1C458.7 -144.8 450.4 -72.4 442 0L0 0Z"
             fill="#362827"></path>
