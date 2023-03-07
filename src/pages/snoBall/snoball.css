@@ -269,33 +269,26 @@
 }
 
 
-.column {
-    float: left;
-    width: 10vw;
-    margin-left: 8vw;
-    height: 20vw;
-    background-color: #212121;
+.foodImagesContainer{
     
-  }
-
-.column img {
-    padding-top: vw;
-    padding-bottom: 2vw;
-  }
-
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  .column img{
-    height: 20vw !important;
-    padding-left: .3vw;
-  }
-
-
-.row{
-    padding-top: 2vw;
-    width: 45vw;
+    margin-left: 3vw;
+    padding-left: 12.5vw;
+    padding-top: 5vw;
 }
+
+.foodImagesContainer img{
+    border: salmon solid;
+    border-bottom: solid white;
+    height: 15vw !important;
+    
+    
+}
+
+.column img{
+    animation-name: pageLoadInFader;
+    animation-duration: 2.5s;
+    animation-play-state: running;
+}
+
+
+
