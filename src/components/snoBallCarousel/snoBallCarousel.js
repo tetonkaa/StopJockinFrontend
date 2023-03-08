@@ -84,7 +84,7 @@ export default function ControlledCarousel() {
         <Carousel.Item interval={950000}>
 
           <div class="foodImagesContainer">
-          <h1>Media</h1>
+          <h1>Photos</h1>
             <div class="column">
             <img onMouseOver={() => setOver3(true)}
                     onMouseOut={() => setOver3(false)} 
