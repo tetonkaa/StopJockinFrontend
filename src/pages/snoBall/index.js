@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import 'animate.css';
 import Carousel from 'react-bootstrap/Carousel';
 import React, { useState } from 'react';
+import YoutubeEmbed from "../../components/YoutubeEmbed/YoutubeEmbed";
 
 //image imports
 import crawFries from './snoBallphotos/crawFishFries.jpg'
@@ -91,7 +92,7 @@ function ControlledCarousel() {
         <Carousel.Item interval={950000}>
 
           <div class="foodImagesContainer">
-          <h1 className="snowballMenu">Media</h1>
+          <h1>Media</h1>
             <div class="column">
             <img onMouseOver={() => setOver3(true)}
                     onMouseOut={() => setOver3(false)} 
@@ -137,7 +138,10 @@ function ControlledCarousel() {
 
         </Carousel.Item>
         <Carousel.Item interval={950000}>
-          
+          <div className="snoBallVideo">
+          <h1>About</h1>
+          <YoutubeEmbed embedId="vQQvxMvtOVw" />
+          </div>
         </Carousel.Item>
       </Carousel>
     );
