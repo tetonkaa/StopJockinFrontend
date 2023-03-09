@@ -17,9 +17,7 @@ export default function SnoBall() {
 
     return (
       <div className="snoballContainer">
-            <div class="animate__animated animate__bounceIn animate__delay-1s ">
-            <h5>Stop Jockin Snoballs</h5>
-            </div>
+
         (<ControlledCarousel />);
         <div className="snoballBG">
 

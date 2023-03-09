@@ -5,7 +5,7 @@
     animation-name: pageLoadInFader;
     animation-duration: 1.5s;
     animation-play-state: running;
-    border: dotted pink;
+    
     
     
 }
@@ -35,12 +35,13 @@
 
 
 .snoballCarousel{
-    position: absolute;
+    
     z-index: 3;
-    top: 2vw;
+    top: 3vw;
     height: 40vw;
-    width: 60vw;
+    width: 100%;
     padding-bottom: 4vw;
+   
     
     
 }
@@ -133,7 +134,8 @@
 
 .snoballContainer .carousel{
     filter: opacity(1) ;
-    left: 23%;
+    width: 61%;
+    left: 20%;
     bottom: 27%;
 
 }
