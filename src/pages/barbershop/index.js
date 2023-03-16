@@ -1,11 +1,12 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import './main.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap';
 import Carousel from 'react-bootstrap/Carousel'
 import 'animate.css';
-
+import { InlineWidget } from "react-calendly";
 
 const data = [
     {
@@ -36,6 +37,8 @@ const data = [
 
 
 export default function Barbershop() {
+ 
+
 
     return (
         <>
@@ -72,7 +75,8 @@ export default function Barbershop() {
                 </div>
             </div>
         </div>
-                <p className="emailLink">Need a cut? <a  href="mailto: angel.l.ppuente@gmail.com">Hit us up </a></p>
+
+                <p className="emailLink">Need a cut? <Link to='/Appointment'>Hit us up </Link></p>
         </>
         
     )

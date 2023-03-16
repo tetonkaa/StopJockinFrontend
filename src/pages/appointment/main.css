@@ -1,0 +1,8 @@
+.AppointmentContainer{
+    height: 100%;
+    padding-top: 5vw;
+}
+
+InlineWidget{
+    height: 2px;
+}

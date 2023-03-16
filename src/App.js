@@ -14,7 +14,7 @@ import Footer from './components/Footer'
 import SignUp from './pages/SignUp'
 import Login from './pages/Login'
 import Comments from './pages/comments'
-
+import Appointment from "./pages/appointment";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
@@ -50,7 +50,8 @@ function App() {
         <Route path="/barbershop" element={<Barbershop/>}/>
         <Route path="/Lot-7" element={<Lot7/>}/>
         <Route path="/Products" element={<Products/>}/>
-        <Route path="/SnoBalls" element={<SnoBall/>}/>      
+        <Route path="/SnoBalls" element={<SnoBall/>}/>
+        <Route path="/Appointment" element={<Appointment/>}/>        
         <Route path="/signup" element={<SignUp setIsLoggedIn={setIsLoggedIn} isLoggedIn={isLoggedIn}/>}/>
         <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} isLoggedIn={isLoggedIn} />}/>
         <Route path="/comments" element={<Comments setIsLoggedIn={setIsLoggedIn} isLoggedIn={isLoggedIn} user={user} />}/>

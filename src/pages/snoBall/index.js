@@ -19,6 +19,7 @@ export default function SnoBall() {
       <div className="snoballContainer">
 
         (<ControlledCarousel />);
+        
         <div className="snoballBG">
 
 
