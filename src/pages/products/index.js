@@ -11,7 +11,9 @@ export default function Products() {
     const [productList, setProductList] = useState()
     
     async function getProductInfo() {
-        const { data } = await axios.get('https://jockloc.herokuapp.com/api/Posts')
+    
+        const { data } = await axios.get(`https://jockloc.herokuapp.com/api/Posts/?where[category.name][like]=products`)
+        console.log(data)
         return data
         
         
@@ -37,25 +39,25 @@ useEffect(() => {
         
         return (
             
-            <div className="productsContainer" >
-                <h1 className="productsTitle">Stop Jockin Products</h1>
-                    
+            <div className="productsPage" >
+                <h1 className="productsTitle">Products</h1>
+                <div className="productsContainer">
                     {productList.map((product, i) => {
-                        return (<div >
-
-
+                        return (
+                        
+                           
                 <div className="eachProduct">
                     <img className="productPhoto" src={product.productImageLink}></img>
                     <p className="productText">{product.productName}</p>
                     <p className="productText">{product.ProductDescription}</p>
-                    <p className="productText">{product.price}</p>
+                    <p className="productText">${product.price}</p>
                 </div>
 
 
 
+                )
+                })}
             </div>
-            )
-        })}
 
 
             </div>
