@@ -1,104 +1,91 @@
-.productsPage{
-    height: 85vw;
-    margin-top: 4.5vw;
-    padding-top:2vw;
-    width: 100%;
+.productsPage {
+  height: 85vw;
+  margin-top: 4.5vw;
+  padding-top: 2vw;
+  width: 100%;
 }
 
+.productsContainer {
+  animation-name: pageLoadInFader;
+  animation-duration: 1.5s;
+  animation-play-state: running;
 
-
-.productsContainer{
-    
-    animation-name: pageLoadInFader;
-    animation-duration: 1.5s;
-    animation-play-state: running;
-    
-
-    display:flex;
-    flex-direction: row;
-    flex-flow: wrap;
-    justify-content: center;
-    
-
-    
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: center;
 }
 
-
-.eachProduct{
-    background-color: rgb(63, 63, 63);
-    box-shadow: 8px 8px 10px 5px black;
-    display:flex;
-    flex-direction: column;
-    margin: 15px;
-    
+.eachProduct {
+  background-color: rgb(63, 63, 63);
+  box-shadow: 8px 8px 10px 5px black;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
 }
 
-.eachProduct:hover{
-    background-color: rgb(0, 0, 0);
-    font: white;
-    transition: .5s;
+.eachProduct:hover {
+  background-color: rgb(0, 0, 0);
+  font: white;
+  transition: 0.5s;
 }
 
-.eachProduct img:hover{
-    transform: scale(1.05);
-    transition: .5s;
-
+.eachProduct img:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 
-.productPhoto{
-    height: 24vh;
-    
-    padding: 10px;
-    margin: auto;
-    margin-bottom: 2vh;
+.productPhoto {
+  height: 24vh;
+
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 2vh;
 }
 
 @media screen and (max-width: 615px) {
-    .productPhoto{
-        width: 100%;
-        position: relative;
-        display: block;
-        margin: auto;
-        margin-bottom: 2vh;
-    }
+  .productPhoto {
+    width: 100%;
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-bottom: 2vh;
   }
-
-.productText{
-    color:rgb(255, 255, 255);
-    text-align: center;
-    font-family: 'Mandali', sans-serif;
-    font-size: 4vh;
-    
-    margin-left: 2vw;
-    margin-right: 2vw;
-    width: 30vh;
-    
 }
 
+.productText {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "Mandali", sans-serif;
+  font-size: 4vh;
 
-.loader{
-    text-align:center;
-    color:goldenrod;
-
+  margin-left: 2vw;
+  margin-right: 2vw;
+  width: 30vh;
 }
 
-.productsTitle{
-    text-align: center;
-    color: goldenrod;
-    font-family: 'Moon Dance', cursive;
-    font-size: 8vw;
-    text-shadow: 6px 4px #404040;
+.loader {
+  text-align: center;
+  color: goldenrod;
 }
 
-.productPrice{
-    font-size: 1vw;
-    color: rgb(123, 192, 19)
+.productsTitle {
+  text-align: center;
+  color: goldenrod;
+  font-family: "Moon Dance", cursive;
+  font-size: 8vw;
+  text-shadow: 6px 4px #404040;
 }
 
-.loaderSVG{
-    fill: rgb(255, 255, 255);
-    height: 30vh;
-    display:block;
-    margin:auto;
-    margin-top: 30vh;
+.productPrice {
+  font-size: 1vw;
+  color: rgb(123, 192, 19);
+}
+
+.loaderSVG {
+  fill: rgb(255, 255, 255);
+  height: 30vh;
+  display: block;
+  margin: auto;
+  margin-top: 30vh;
 }
