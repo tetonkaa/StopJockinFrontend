@@ -1,6 +1,5 @@
 .snoballContainer {
   height: 100vh;
-  width: 100%;
   animation-name: pageLoadInFader;
   animation-duration: 1.5s;
   animation-play-state: running;
