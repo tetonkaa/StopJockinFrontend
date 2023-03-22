@@ -91,15 +91,23 @@ aside{
     color:green;
 }
 
-.emailLink{
+.needACut{
     text-align: center !important;
     font-size: 4vh;
     color: white;
 }
 
-.emailLink a{
+.needACut a{
+    font-size: 4vh;
+    color:rgb(255, 255, 255);
+    margin: 1vw;
+    border: rgb (22, 22, 22) 10px;
+}
+
+.needACut a:hover{
     font-size: 4vh;
     color:goldenrod;
+    
 }
 
 @keyframes pageLoadInFader {
@@ -128,6 +136,48 @@ aside{
     margin: auto;
     /* margin-left: 30%; */
     margin-top: 3vw;
+}
+
+
+
+.button-74 {
+  background-color: goldenrod;
+  border: 2px solid #3d3d3d;
+  border-radius: 30px;
+  box-shadow: #494949 4px 4px 0 0;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 4vh;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #fff;
+  transition: .3s;
+}
+
+.button-74:active {
+  box-shadow: #606060 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+.apptbtn:hover{
+    
+    background-color: rgb(255, 255, 255);
+    border: black solid 2px;
+    
+ 
 }
 
 

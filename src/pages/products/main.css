@@ -90,6 +90,11 @@
     text-shadow: 6px 4px #404040;
 }
 
+.productPrice{
+    font-size: 1vw;
+    color: rgb(123, 192, 19)
+}
+
 .loaderSVG{
     fill: rgb(255, 255, 255);
     height: 30vh;

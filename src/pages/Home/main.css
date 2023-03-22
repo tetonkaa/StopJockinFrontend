@@ -1,20 +1,34 @@
 .largeLogo{
     font-family: 'Moon Dance', cursive;
     /* font-size: 15vw; */
-    font-size: 15vw;
-    padding-left: 24vw;
+    font-size: 12vw;
+    padding-left: 30vw;
     text-align: left;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-    background-image: linear-gradient(45deg, goldenrod, #ffffff);
-    -webkit-background-clip: text;
+    /* background-image: linear-gradient(45deg, goldenrod, #ffffff); */
+    /* -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; */
     /* border: dotted pink; */
-    animation: titleGlower 2s linear infinite alternate;
-    height: 20vw
+    /* animation: titleGlower 2s linear infinite alternate; */
+    text-shadow: 6px 4px #404040;
+    color: goldenrod;
+    height: 20vw;
+    
+    border-width: 5px;
     }
+
+    /* .largeLogo:after {
+        content: '';
+        display: block;
+        position: relative;
+        width: 45%;
+        border: 2px solid goldenrod;
+        margin-top: 60px;
+        margin-left: 4%;
+     } */
     
 
 .homeText{
@@ -25,14 +39,14 @@
     font-size: 4vh;
     z-index: 3;
     position: absolute;
-    padding-top: 0vw;
+    padding-top: 2vw;
     
 }
 
 @keyframes titleGlower{
-    0%   {text-shadow: #FC0 2px 0 10px;}
+    0%   {text-shadow: rgb(255, 255, 255) 6px  4px;}
     
-    100%{text-shadow: rgb(255, 255, 255) 2px 0 10px;}
+    100%{text-shadow: 6px 4px #404040;}
 }
 
 
@@ -56,7 +70,7 @@
 .homeContainer .carousel {
     
     box-shadow: -400px 0px 0px rgb(255, 45, 45) ;
-    filter: blur(8px) opacity(.5);;
+    filter:  opacity(.5);;
 }
 
 .carousel {   

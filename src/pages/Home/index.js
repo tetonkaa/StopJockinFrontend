@@ -36,8 +36,8 @@ const data = [
           <div>
           <div className="homeText">       
             {/* <p className="homeText"> */}
-  
-            <h1 className="largeLogo">Stop Jockin</h1>
+        
+            <h1 className="largeLogo animate__animated animate__fadeInUp animate__slow animate__repeat-1" >Stop Jockin</h1>
   
             <p className="subtext">Fine Cuts, Classic New Orleans style snoBalls, and other Stop Jockin products and services</p>
           </div>

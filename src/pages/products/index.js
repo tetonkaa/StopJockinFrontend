@@ -9,10 +9,11 @@ import LoadingSvg from './pulse-multiple.svg'
 export default function Products() {
     const [products, setProducts] = useState({})
     const [productList, setProductList] = useState()
+    const [category, setCategory] = useState('products')
     
-    async function getProductInfo() {
-    
-        const { data } = await axios.get(`https://jockloc.herokuapp.com/api/Posts/?where[category.name][like]=products`)
+    async function getProductInfo(category) {
+        
+        const { data } = await axios.get(`https://jockloc.herokuapp.com/api/Posts/?where[category.name][like]=${category}`)
         console.log(data)
         return data
         
@@ -20,15 +21,15 @@ export default function Products() {
     }
     
     useEffect(() => {
-    getProductInfo().then(data => setProducts(data))
-}, [])
-
-useEffect(() => {
-    setProductList({products}.products.docs)
+        getProductInfo(category).then(data => setProducts(data))
+    }, [category])
     
-}, [products])
-
-
+    useEffect(() => {
+        setProductList({products}.products.docs)
+        
+    }, [products])
+    
+    
 
 
     
@@ -41,6 +42,9 @@ useEffect(() => {
             
             <div className="productsPage" >
                 <h1 className="productsTitle">Products</h1>
+                <button onClick={() =>setCategory('products')}>All</button>
+                <button onClick={() =>setCategory('apparel')}>Apparel</button>
+                <button onClick={() =>setCategory('snacks')}>Snacks</button>
                 <div className="productsContainer">
                     {productList.map((product, i) => {
                         return (
@@ -50,7 +54,7 @@ useEffect(() => {
                     <img className="productPhoto" src={product.productImageLink}></img>
                     <p className="productText">{product.productName}</p>
                     <p className="productText">{product.ProductDescription}</p>
-                    <p className="productText">${product.price}</p>
+                    <p className="productText productPrice">${product.price}</p>
                 </div>
 
 

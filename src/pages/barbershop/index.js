@@ -76,7 +76,12 @@ export default function Barbershop() {
             </div>
         </div>
 
-                <p className="emailLink">Need a cut? <Link to='/Appointment'>Hit us up </Link></p>
+                <p className="needACut">Need a cut? 
+                  <Link to='/Appointment'>
+                <button className="button-74">Hit us up!
+                </button>
+                </Link>
+                </p>
         </>
         
     )
