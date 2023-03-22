@@ -30,9 +30,15 @@ export default function Products() {
     return (
       <div className="productsPage">
         <h1 className="productsTitle">Products</h1>
-        <button onClick={() => setCategory("products")}>All</button>
-        <button onClick={() => setCategory("apparel")}>Apparel</button>
-        <button onClick={() => setCategory("snacks")}>Snacks</button>
+    <div className="filterContainer">
+        <p>Filters:</p>
+    <div className="productButtons">
+        <button className="button-75" onClick={() => setCategory("products")}>All</button>
+        <button className="button-75" onClick={() => setCategory("beauty")}>Beauty</button>
+        <button  className="button-75"onClick={() => setCategory("apparel")}>Apparel</button>
+        <button  className="button-75"onClick={() => setCategory("snacks")}>Snacks</button>
+    </div>
+    </div>    
         <div className="productsContainer">
           {productList.map((product, i) => {
             return (

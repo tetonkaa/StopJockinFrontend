@@ -77,6 +77,46 @@
   text-shadow: 6px 4px #404040;
 }
 
+.productButtons{
+    display:flex;
+    
+    justify-content: flex-end;
+    gap: 1vw;
+    width: 75%;
+    margin-left: 15vw;
+}
+
+.filterContainer{
+    display:flex;
+    justify-content: flex-start;
+    
+    width: 80%;
+    margin: auto;
+}
+
+.filterContainer p{
+    color: goldenrod;
+    font-size: 1.5vw;
+}
+.button-75 {
+    background-color: goldenrod;
+    border: 2px solid #3d3d3d;
+    border-radius: 20px;
+    box-shadow: #494949 4px 4px 0 0;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 2vh;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    touch-action: manipulation;
+  }
+
+.productsPage button{
+    margin-bottom: 2vw;
+}
+
 .productPrice {
   font-size: 1vw;
   color: rgb(123, 192, 19);
